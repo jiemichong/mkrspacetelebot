@@ -1,0 +1,12 @@
+[Unit]
+Description=telebot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/apps/env/bin/python /home/pi/apps/linux/telebot.py
+WorkingDirectory=/home/pi/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
